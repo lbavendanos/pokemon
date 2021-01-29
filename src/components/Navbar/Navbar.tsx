@@ -13,14 +13,14 @@ function Navbar() {
           </div>
         </a>
         <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-          <a href="/" className="nav-item mr-5 hover:text-gray-900">
-            Characters
+          <a href="/pokemon" className="nav-item mr-5 hover:text-gray-900">
+            Pokemon
           </a>
-          <a href="/" className="nav-item mr-5 hover:text-gray-900">
-            Locations
+          <a href="/movies" className="nav-item mr-5 hover:text-gray-900">
+            Movies
           </a>
-          <a href="/" className="nav-item mr-5 hover:text-gray-900">
-            Episodes
+          <a href="/games" className="nav-item mr-5 hover:text-gray-900">
+            Games
           </a>
         </nav>
       </div>
