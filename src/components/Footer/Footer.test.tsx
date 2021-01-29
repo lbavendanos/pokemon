@@ -5,7 +5,7 @@ describe('Footer.tsx', () => {
   it('render creator', () => {
     render(<Footer />)
 
-    const creator = '© 2020 lbavendanos'
+    const creator = '© 2021 lbavendanos'
     const footer = screen.getByText(creator)
 
     expect(footer).toBeInTheDocument()
