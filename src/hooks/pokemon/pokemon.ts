@@ -19,9 +19,10 @@ export function usePokemon() {
   const [pokemon, setPokemon] = useState<Pokemon[]>()
   const [error, setError] = useState(null)
 
-  const fetchPokemon = async () => {
+  const fetchPokemon = async (params?: object) => {
     try {
-      const { data } = await axios.get<Response>('/pokemon')
+      const config = { params }
+      const { data } = await axios.get<Response>('/pokemon', config)
 
       setInfo({
         count: data.count,
