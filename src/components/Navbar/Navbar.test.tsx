@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react'
+import { MemoryRouter } from 'react-router-dom'
 import Navbar from './Navbar'
 
 describe('Navbar.tsx', () => {
   it('render logo and navigation', () => {
-    render(<Navbar />)
+    render(<Navbar />, { wrapper: MemoryRouter })
 
     const logo = screen.getByAltText('pokemon')
     const pokemon = screen.getByText(/pokemon/i)
