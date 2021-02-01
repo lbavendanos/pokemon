@@ -1,5 +1,5 @@
 import { act, renderHook } from '@testing-library/react-hooks'
-import { getAxiosError, getAxiosResponse } from '../api/api.test'
+import { getAxiosError, getAxiosResponse } from '@/hooks/api/api.test'
 import { Info, Item, Response, useItems } from './items'
 import axios from 'axios'
 

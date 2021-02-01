@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import axios from '../../utils/axios'
+import axios from '@/utils/axios'
 
 export interface Pokemon {
   abilities: Ability[]

@@ -1,6 +1,6 @@
 import { AxiosRequestConfig } from 'axios'
 import { useState } from 'react'
-import axios from '../../utils/axios'
+import axios from '@/utils/axios'
 
 export function useApiGet<T>() {
   const [response, setResponse] = useState<T>()
