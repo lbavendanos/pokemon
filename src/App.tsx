@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 
 const Home = lazy(() => import('./pages/Home/Home'))
 const Pokemon = lazy(() => import('./pages/Pokemon/Pokemon'))
+const PokemonDetail = lazy(() => import('./pages/PokemonDetail/PokemonDetail'))
 const Movies = lazy(() => import('./pages/Movies/Movies'))
 const Games = lazy(() => import('./pages/Games/Games'))
 
@@ -17,6 +18,7 @@ function App() {
           <Suspense fallback={<div>Loading...</div>}>
             <Switch>
               <Route exact path="/" component={Home} />
+              <Route path="/pokemon/:id" component={PokemonDetail} />
               <Route path="/pokemon" component={Pokemon} />
               <Route path="/movies" component={Movies} />
               <Route path="/games" component={Games} />
