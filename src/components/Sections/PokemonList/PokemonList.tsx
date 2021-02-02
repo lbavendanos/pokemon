@@ -22,7 +22,7 @@ function PokemonList() {
         src: item.sprites.other?.dream_world.front_default || '',
         alt: item.name,
       },
-      description: item.name,
+      description: `Weigth: ${item.weight}, Height: ${item.height}`,
     }
   }
 
